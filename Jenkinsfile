@@ -1,4 +1,5 @@
 pipeline{
+    agent any
     environment {
         GIT_REPO = 'https://github.com/krishanthisera/jenkins-pr-poc.git'
     }
