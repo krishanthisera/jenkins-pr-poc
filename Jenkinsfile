@@ -10,7 +10,7 @@ pipeline{
     stages{
         stage("Source Chekout"){
             steps{
-                git credentialsId: 'git-fcc', url: "${GIT_REPO}"
+                git credentialsId: 'git-fcc', url: "${GIT_REPO}", branch: "${BRANCH_NAME}"
             }
             post{
                 success{
