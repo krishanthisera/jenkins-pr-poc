@@ -1,5 +1,9 @@
 pipeline{
-    agent any
+    agent {
+        kubernetes {
+            yamlFile 'jenkins-build-template.yaml'
+        }
+    }
     environment {
         GIT_REPO = 'https://github.com/krishanthisera/jenkins-pr-poc.git'
     }
