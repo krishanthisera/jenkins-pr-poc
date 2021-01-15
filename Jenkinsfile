@@ -2,11 +2,6 @@ pipeline{
     environment {
         GIT_REPO = 'https://github.com/krishanthisera/jenkins-pr-poc.git'
     }
-    agent{
-        kubernetes {
-            yamlFile 'jenkins-build-template.yaml'
-        }
-    }
     stages{
         stage("Source Chekout"){
             steps{
