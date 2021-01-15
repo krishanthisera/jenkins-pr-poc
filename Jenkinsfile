@@ -1,4 +1,7 @@
 pipeline{
+    environment {
+        GIT_REPO = 'https://github.com/krishanthisera/istio-certman-poc.git'
+    }
     agent{
         kubernetes {
             yamlFile 'jenkins-build-template.yaml'
