@@ -1,6 +1,6 @@
 pipeline{
     environment {
-        GIT_REPO = 'https://github.com/krishanthisera/istio-certman-poc.git'
+        GIT_REPO = 'https://github.com/krishanthisera/jenkins-pr-poc.git'
     }
     agent{
         kubernetes {
